@@ -15,4 +15,7 @@
     <string name="g2obesity">Obesidade Grau II (Severa)</string>
     <string name="g3obesity">Obesidade Grau II (Mórbida)</string>
     <string name="newCalculation">Realizar Novo Cálculo</string>
+    <string name="invalidValues">Valores inválidos, tente novamente!</string>
+    <string name="divByZero">Divisão por zero invalida!</string>
+    <string name="resultError">Erro durante o cálculo, tente novamente!</string>
 </resources>

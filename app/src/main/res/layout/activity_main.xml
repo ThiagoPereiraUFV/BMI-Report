@@ -32,7 +32,7 @@
             app:layout_constraintWidth_percent="1"
             android:inputType="textPersonName"
             android:textSize="25sp"
-            android:ems="12"
+            android:ems="13"
             android:maxLength="19"
             app:layout_constraintTop_toBottomOf="@id/name"
             app:layout_constraintLeft_toLeftOf="@id/name"
@@ -56,7 +56,7 @@
             app:layout_constraintWidth_percent="1"
             android:inputType="number"
             android:textSize="25sp"
-            android:ems="4"
+            android:ems="3"
             app:layout_constraintTop_toBottomOf="@id/age"
             app:layout_constraintLeft_toLeftOf="@id/age"
         />
@@ -78,7 +78,7 @@
             app:layout_constraintWidth_percent="1"
             android:inputType="numberDecimal"
             android:textSize="25sp"
-            android:ems="4"
+            android:ems="5"
             app:layout_constraintTop_toBottomOf="@id/weight"
             app:layout_constraintLeft_toLeftOf="@id/weight"
         />
@@ -100,7 +100,7 @@
             app:layout_constraintWidth_percent="1"
             android:inputType="numberDecimal"
             android:textSize="25sp"
-            android:ems="4"
+            android:ems="5"
             app:layout_constraintTop_toBottomOf="@id/height"
             app:layout_constraintLeft_toLeftOf="@id/height"
         />
