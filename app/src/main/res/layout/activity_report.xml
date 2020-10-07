@@ -140,6 +140,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginTop="150dp"
             android:textSize="20sp"
+            android:onClick="newCalc"
         />
     </androidx.constraintlayout.widget.ConstraintLayout>
 

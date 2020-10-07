@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.TextView;
 
 public class Report extends AppCompatActivity {
@@ -62,5 +63,11 @@ public class Report extends AppCompatActivity {
 	protected void onDestroy() {
 		super.onDestroy();
 		Log.d("Ciclo", getLocalClassName() +  ": Activity destruída!");
+	}
+
+	public void newCalc(View v) {
+		Intent it = new Intent(this, MainActivity.class);
+		it.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+		startActivity(it);
 	}
 }
