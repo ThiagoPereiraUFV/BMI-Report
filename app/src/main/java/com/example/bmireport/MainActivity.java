@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
 		Log.d("Ciclo", getLocalClassName() +  ": Activity destruída!");
 	}
 
-	private String getString(int id) {
+	private String getContextString(int id) {
 		return this.getResources().getString(id);
 	}
 
@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
 			final float height = Float.parseFloat(((EditText) findViewById(R.id.editHeight)).getText().toString());
 
 			if(height == 0) {
-				Toast.makeText(this, this.getResources().getString(R.string.divByZero), Toast.LENGTH_SHORT).show();
+				Toast.makeText(this, getContextString(R.string.divByZero), Toast.LENGTH_SHORT).show();
 				return;
 			}
 
@@ -94,11 +94,11 @@ public class MainActivity extends AppCompatActivity {
 				it.putExtras(extras);
 				startActivity(it);
 			} catch(Exception e) {
-				Toast.makeText(this, getString(R.string.resultError), Toast.LENGTH_SHORT).show();
+				Toast.makeText(this, getContextString(R.string.resultError), Toast.LENGTH_SHORT).show();
 				Log.e("AppError", Objects.requireNonNull(e.getMessage()));
 			}
 		} catch(Exception e) {
-			Toast.makeText(this, this.getResources().getString(R.string.invalidValues), Toast.LENGTH_SHORT).show();
+			Toast.makeText(this, getContextString(R.string.invalidValues), Toast.LENGTH_SHORT).show();
 			Log.e("AppError", Objects.requireNonNull(e.getMessage()));
 		}
 	}
