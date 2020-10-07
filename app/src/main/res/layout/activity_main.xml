@@ -33,6 +33,7 @@
             android:inputType="textPersonName"
             android:textSize="25sp"
             android:ems="12"
+            android:maxLength="19"
             app:layout_constraintTop_toBottomOf="@id/name"
             app:layout_constraintLeft_toLeftOf="@id/name"
         />
