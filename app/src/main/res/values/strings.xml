@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">BMI report</string>
+    <string name="name">Name</string>
+    <string name="age">Age</string>
+    <string name="height">Height</string>
+    <string name="weight">Weight</string>
+    <string name="report">Nutritional report</string>
+    <string name="index">BMI</string>
+    <string name="classification">Classification</string>
+    <string name="underWeight">Under weight</string>
+    <string name="healthy">Healthy</string>
+    <string name="overWeight">Over Weight</string>
+    <string name="g1obesity">Grade I Obesity</string>
+    <string name="g2obesity">Grade II Obesity (Severe)</string>
+    <string name="g3obesity">Grade III Obesity (Morbid)</string>
+    <string name="newCalculation">New Calculation</string>
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Relatório IMC</string>
+    <string name="name">Nome</string>
+    <string name="age">Idade</string>
+    <string name="height">Altura</string>
+    <string name="weight">Peso</string>
+    <string name="report">Relatório nutricional</string>
+    <string name="index">IMC</string>
+    <string name="classification">Classificação</string>
+    <string name="underWeight">Abaixo do Peso</string>
+    <string name="healthy">Saudável</string>
+    <string name="overWeight">Sobrepeso</string>
+    <string name="g1obesity">Obesidade Grau I</string>
+    <string name="g2obesity">Obesidade Grau II (Severa)</string>
+    <string name="g3obesity">Obesidade Grau II (Mórbida)</string>
+    <string name="newCalculation">Realizar Novo Cálculo</string>
+</resources>
