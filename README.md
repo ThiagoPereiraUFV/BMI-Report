@@ -21,5 +21,5 @@
 ## Features
 
 * BMI calculation based on person's height and weight
-* Support decimal numbers
+* Supports decimal numbers
 * Internationalized to Brazilian Portuguese and American English languages
