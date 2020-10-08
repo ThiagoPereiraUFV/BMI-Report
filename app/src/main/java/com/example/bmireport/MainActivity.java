@@ -9,7 +9,6 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import java.io.IOException;
 import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity {
@@ -63,42 +62,21 @@ public class MainActivity extends AppCompatActivity {
 			final float height = Float.parseFloat(((EditText) findViewById(R.id.editHeight)).getText().toString());
 
 			if(height == 0) {
-				Toast.makeText(this, getContextString(R.string.divByZero), Toast.LENGTH_SHORT).show();
+				Toast.makeText(this, getContextString(R.string.errorDivByZero), Toast.LENGTH_SHORT).show();
 				return;
 			}
 
-			try {
-				final float bmi = weight/(height*height);
-				final String classif =
-						(bmi < 18.5) ?
-							getString(R.string.underWeight)
-						: (bmi < 25) ?
-							getString(R.string.healthy)
-						: (bmi < 30) ?
-							getString(R.string.overWeight)
-						: (bmi < 35) ?
-							getString(R.string.g1obesity)
-						: (bmi < 40) ?
-							getString((R.string.g2obesity))
-						: getString(R.string.g3obesity);
+			Bundle extras = new Bundle();
+			extras.putString("name", name);
+			extras.putInt("age", age);
+			extras.putFloat("weight", weight);
+			extras.putFloat("height", height);
 
-				Bundle extras = new Bundle();
-				extras.putString("name", name);
-				extras.putInt("age", age);
-				extras.putFloat("weight", weight);
-				extras.putFloat("height", height);
-				extras.putFloat("bmi", bmi);
-				extras.putString("classif", classif);
-
-				final Intent it = new Intent(this, Report.class);
-				it.putExtras(extras);
-				startActivity(it);
-			} catch(Exception e) {
-				Toast.makeText(this, getContextString(R.string.resultError), Toast.LENGTH_SHORT).show();
-				Log.e("AppError", Objects.requireNonNull(e.getMessage()));
-			}
+			final Intent it = new Intent(this, Report.class);
+			it.putExtras(extras);
+			startActivity(it);
 		} catch(Exception e) {
-			Toast.makeText(this, getContextString(R.string.invalidValues), Toast.LENGTH_SHORT).show();
+			Toast.makeText(this, getContextString(R.string.errorInvalidValues), Toast.LENGTH_SHORT).show();
 			Log.e("AppError", Objects.requireNonNull(e.getMessage()));
 		}
 	}

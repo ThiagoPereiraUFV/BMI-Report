@@ -14,7 +14,10 @@
     <string name="g2obesity">Grade II Obesity (Severe)</string>
     <string name="g3obesity">Grade III Obesity (Morbid)</string>
     <string name="newCalculation">New Calculation</string>
-    <string name="invalidValues">Invalid values, try again!</string>
-    <string name="divByZero">Invalid division by zero!</string>
-    <string name="resultError">Error during calculation, try again!</string>
+    <string name="errorInvalidValues">Invalid values, fill all fields and try again!</string>
+    <string name="errorDivByZero">Invalid division by zero!</string>
+    <string name="errorCalc">Error during calculation, try again!</string>
+    <string name="errorGetValues">Error getting values, try again!</string>
+    <string name="heightRes">Height:</string>
+    <string name="weightRes">Weight:</string>
 </resources>
