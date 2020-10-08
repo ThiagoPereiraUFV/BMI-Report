@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.Objects;
 
 public class Report extends AppCompatActivity {
@@ -46,11 +48,11 @@ public class Report extends AppCompatActivity {
 								getString((R.string.g2obesity))
 								: getString(R.string.g3obesity);
 
-				name.setText(extras.getString("name"));
+				name.setText(extras.getString("name").trim());
 				age.setText(Integer.toString(extras.getInt("age")));
-				weight.setText(String.format("%.2f", extras.getFloat("weight")) + " kg");
-				height.setText(String.format("%.2f", extras.getFloat("height")) + " m");
-				bmi.setText(String.format("%.2f", index) + " kg/m²");
+				weight.setText((new BigDecimal(extras.getFloat("weight"))).setScale(2, RoundingMode.DOWN).floatValue() + " kg");
+				height.setText((new BigDecimal(extras.getFloat("height"))).setScale(2, RoundingMode.DOWN).floatValue() + " m");
+				bmi.setText((new BigDecimal(index)).setScale(2, RoundingMode.DOWN).floatValue() + " kg/m²");
 				classif.setText(classification);
 			} catch(Exception e) {
 				Toast.makeText(this, getContextString(R.string.errorCalc), Toast.LENGTH_SHORT).show();
