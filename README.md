@@ -6,7 +6,7 @@
 
 <p align="center" width="100%">
 	<img src="https://rb.gy/ys9mnb" width="300px" height="auto" alt="BMI Report screenshot" />
-	<img src="https://rb.gy/kneyjg" width="300px" height="auto" alt="BMI Report screenshot" />
+	<img src="https://rb.gy/rv1kdl" width="300px" height="auto" alt="BMI Report screenshot" />
 </p>
 <p align="center" width="100%">
 	<i>App screenshots (taken from Xiaomi Redmi 5)</i>
